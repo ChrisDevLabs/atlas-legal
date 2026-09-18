@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Información legal y de privacidad de ATLAS en español."
+  />
+
+  <title>ATLAS — Información legal</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #121212;
+      --surface: #1b1b1b;
+      --surface-hover: #202020;
+      --border: #2d2d2d;
+      --text: #f5f5f5;
+      --muted: #a7a7a7;
+      --accent: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 64px 0 72px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .back,
+    .language {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .brand {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      font-size: clamp(36px, 7vw, 56px);
+      line-height: 1.05;
+    }
+
+    .intro {
+      max-width: 640px;
+      margin-bottom: 40px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .documents {
+      display: grid;
+      gap: 14px;
+    }
+
+    .document {
+      display: block;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      transition:
+        border-color 0.15s ease,
+        background 0.15s ease,
+        transform 0.15s ease;
+    }
+
+    .document:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .document strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    .document span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 520px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="topbar">
+      <a class="back" href="../">← Idiomas</a>
+      <a class="language" href="../en/">English</a>
+    </div>
+
+    <div class="brand">ChrisDevLabs</div>
+
+    <h1>ATLAS</h1>
+
+    <p class="intro">
+      Información legal, privacidad y gestión de datos de ATLAS.
+    </p>
+
+    <section class="documents" aria-label="Documentos legales">
+      <a class="document" href="./privacy.html">
+        <strong>Política de Privacidad</strong>
+        <span>Información sobre datos, permisos, servicios y privacidad.</span>
+      </a>
+
+      <a class="document" href="./account-deletion.html">
+        <strong>Eliminación de cuenta y datos</strong>
+        <span>Cómo eliminar una cuenta ATLAS y solicitar la eliminación de datos.</span>
+      </a>
+
+      <a class="document" href="./terms.html">
+        <strong>Términos de Servicio</strong>
+        <span>Condiciones aplicables al uso de ATLAS.</span>
+      </a>
+    </section>
+
+    <footer>
+      ATLAS · ChrisDevLabs<br />
+      Contacto:
+      <a href="mailto:dev.atlastraining@gmail.com">
+        dev.atlastraining@gmail.com
+      </a>
+    </footer>
+  </main>
+</body>
+</html>
